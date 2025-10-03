@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>生态心声基金会</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      background-color: #f9f9f7;
+      color: #333;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #2f5233;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #2f5233;
+    }
+    .hero {
+      margin-top: 80px;
+      position: relative;
+      text-align: center;
+    }
+    .hero iframe, .hero video {
+      width: 100%;
+      height: 480px;
+      border: none;
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #2f5233;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #2f5233;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>生态心声基金会</h1>
+    <nav>
+      <a href="#home">首页</a>
+      <a href="#videos">光影</a>
+      <a href="#articles">文苑</a>
+      <a href="#audio">声享</a>
+      <a href="#about">关于我们</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <!-- 示例：Bilibili 视频嵌入 -->
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1xxxxxx&page=1" allowfullscreen></iframe>
+    <div class="hero-text">回归，是未来的方向</div>
+  </section>
+
+  <section class="section" id="videos">
+    <h2>光影 · 视频</h2>
+    <div class="cards">
+      <div class="card">森林纪录片</div>
+      <div class="card">海洋守护短片</div>
+      <div class="card">气候变化访谈</div>
+    </div>
+  </section>
+
+  <section class="section" id="articles">
+    <h2>文苑 · 文章</h2>
+    <div class="cards">
+      <div class="card">文章标题示例 1</div>
+      <div class="card">文章标题示例 2</div>
+      <div class="card">文章标题示例 3</div>
+    </div>
+  </section>
+
+  <section class="section" id="audio">
+    <h2>声享 · 音频</h2>
+    <audio controls>
+      <source src="https://www.example.com/audio.mp3" type="audio/mpeg">
+      您的浏览器不支持音频播放。
+    </audio>
+  </section>
+
+  <section class="section" id="about">
+    <h2>关于我们</h2>
+    <p>生态心声基金会致力于推动生态保护、传播自然之美、启发公众参与。我们相信，回归自然是未来的方向。</p>
+  </section>
+
+  <footer>
+    <p>© 2025 生态心声基金会 | 联系方式: info@example.org</p>
+  </footer>
+</body>
+</html>
